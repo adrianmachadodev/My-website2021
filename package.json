@@ -1,0 +1,19 @@
+{
+  "name": "my-website2021",
+  "version": "1.0.0",
+  "description": "My website 2021",
+  "main": "\u001b[C\u001b[B\u001b[C index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianMachadoG/My-website2021.git"
+  },
+  "author": "Adrian Machado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianMachadoG/My-website2021/issues"
+  },
+  "homepage": "https://github.com/adrianMachadoG/My-website2021#readme"
+}
