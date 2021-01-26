@@ -2,8 +2,11 @@
   "name": "my-website2021",
   "version": "1.0.0",
   "description": "My website 2021",
-  "main": "\u001b[C\u001b[B\u001b[C index.html",
+  "main": "index.html",
   "scripts": {
+    "scripts": {
+    "dev": "lite-server"
+  },	  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/adrianMachadoG/My-website2021/issues"
   },
-  "homepage": "https://github.com/adrianMachadoG/My-website2021#readme"
+  "homepage": "https://github.com/adrianMachadoG/My-website2021#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
