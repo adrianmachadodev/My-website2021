@@ -1,0 +1,212 @@
+$blancoWeb: #fff;
+$negroWeb: black;
+ 
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+    background: #fff;
+    transition: .3s ease all;
+    
+    &.dark{
+
+        background: black;
+
+
+    }
+
+}
+
+
+
+
+.navbar{
+
+    background: #fff;
+    body.dark &{
+
+        background: black;
+        a{
+        color: #fff;
+        }
+
+    
+
+        .nav-link{
+
+            color: #fff;
+    
+        }
+
+        .navbar-toggler-icon{
+
+            color: #fff;
+
+        }
+ 
+
+    }
+
+
+}
+
+
+.switch{
+
+    background: #343d58;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+
+    &::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 32px;
+        position: absolute;
+        background: #fff;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+
+
+    }
+
+    &.active{
+        background:orange;
+        color: black;
+        &::after{
+            right: 0;
+            left: unset;
+
+        }
+
+    }
+
+    span{
+        width: 30px;
+        height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+
+
+    }
+
+
+}
+
+
+.content-welc{
+
+    width: 100%;
+    height:450px;
+    /*background-color: lawngreen;*/
+    margin-bottom: 50px;
+    margin-top: 50px;
+    overflow: hidden;
+
+}
+
+.welc-title{
+
+    height: 250px;
+    width: 650px;
+    margin-top: 90px;
+    margin-left: 80px;
+    /*background-color: lightpink;*/
+
+
+
+}
+
+.text-welc{
+
+    margin-top: 50px;
+
+}
+
+.conoc{
+
+    margin-left: 15px;
+
+
+}
+
+
+.works{
+
+    
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+/*icono del about main*/
+.about-icon{
+
+    margin-right: 5px;
+    margin-bottom: 6px;
+  
+
+
+}
+
+.btn {
+
+   
+    margin-top: 50px;
+
+}
+
+.about{
+
+    margin-top: 200px;
+
+}
+
+
+p{
+
+    body.dark & {
+
+        color: $blancoWeb;
+
+    }
+
+
+
+
+}
+
+h1{
+
+    body.dark & {
+
+        color: $blancoWeb;
+
+    }
+
+
+}
+
+.icon{
+
+    body.dark & {
+
+        color: $blancoWeb;
+
+    }
+
+
+}
