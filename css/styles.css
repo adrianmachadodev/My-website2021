@@ -5,18 +5,36 @@ body {
   background: #fff;
   transition: .3s ease all; }
   body.dark {
-    background: black; }
+    background: #1B1B1B; }
 
 .navbar {
-  background: #fff; }
+  background: #fff;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 10px rgba(170, 170, 170, 0.16);
+  /*Modo night*/ }
+  .navbar a {
+    color: black; }
+    .navbar a:hover {
+      color: deepskyblue; }
+  .navbar .nav-link a {
+    color: black; }
+  .navbar .bi-list:hover {
+    color: deepskyblue; }
   body.dark .navbar {
-    background: black; }
+    background: #1B1B1B;
+    box-shadow: 0px 0px 10px rgba(216, 212, 212, 0.16); }
     body.dark .navbar a {
       color: #fff; }
-    body.dark .navbar .nav-link {
+      body.dark .navbar a:hover {
+        color: deepskyblue; }
+    body.dark .navbar .nav-link a {
       color: #fff; }
-    body.dark .navbar .navbar-toggler-icon {
+    body.dark .navbar .nav-link:hover {
+      color: deepskyblue; }
+    body.dark .navbar .bi-list {
       color: #fff; }
+      body.dark .navbar .bi-list:hover {
+        color: deepskyblue; }
 
 .switch {
   background: #343d58;
@@ -29,8 +47,8 @@ body {
   .switch::after {
     content: "";
     display: block;
-    width: 30px;
-    height: 32px;
+    width: 25px;
+    height: 25px;
     position: absolute;
     background: #fff;
     top: 0;
@@ -46,12 +64,17 @@ body {
       right: 0;
       left: unset; }
   .switch span {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 25px;
     display: block;
     background: none;
-    color: #fff; }
+    color: #fff;
+    margin-top: -3px; }
 
+body.dark label {
+  color: #fff; }
+
+/*seccion fin mode dark*/
 .content-welc {
   width: 100%;
   height: 450px;

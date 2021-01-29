@@ -1,5 +1,10 @@
 $blancoWeb: #fff;
 $negroWeb: black;
+$grisnegroweb: #1B1B1B;
+
+
+$sombraLight: 0px 0px 10px rgba(170, 170, 170,.16);
+$sombraDark: 0px 0px 10px rgba(216, 212, 212, 0.16);
  
 
 
@@ -15,7 +20,7 @@ body{
     
     &.dark{
 
-        background: black;
+        background: $grisnegroweb;
 
 
     }
@@ -27,27 +32,98 @@ body{
 
 .navbar{
 
+    a{
+        color: black;
+        &:hover{
+
+            color:deepskyblue;
+
+
+        }
+
+    }
     background: #fff;
+    transition: .3s ease all;
+    box-shadow: $sombraLight;
+    
+
+    .nav-link{
+
+        a{
+            color: black;
+
+        }
+
+    }
+
+    
+    .bi-list{
+
+        &:hover{
+
+            color: deepskyblue;
+
+        }
+
+    }
+    
+    
+
+    
+
+    /*Modo night*/
     body.dark &{
 
-        background: black;
+
+        background: $grisnegroweb;
+        box-shadow: $sombraDark;
+       
         a{
         color: #fff;
+        &:hover{
+
+            color:deepskyblue;
+
+
         }
+
+        
+       
+     }
 
     
 
         .nav-link{
 
-            color: #fff;
+           a{
+             color: #fff;
+
+           }
+
+            &:hover{
+
+                color: deepskyblue;
+
+            }
+            
     
         }
 
-        .navbar-toggler-icon{
+        .bi-list{
 
             color: #fff;
+            &:hover{
+
+                color: deepskyblue;
+
+            }
+
+
 
         }
+        
+
+        
  
 
     }
@@ -69,8 +145,8 @@ body{
     &::after{
         content: "";
         display: block;
-        width: 30px;
-        height: 32px;
+        width: 25px;
+        height: 25px;
         position: absolute;
         background: #fff;
         top: 0;
@@ -95,11 +171,13 @@ body{
     }
 
     span{
-        width: 30px;
-        height: 30px;
+        
+        width: 20px;
+        height: 25px;
         display: block;
         background: none;
         color: #fff;
+        margin-top: -3px;
 
 
     }
@@ -107,6 +185,22 @@ body{
 
 }
 
+
+
+label{
+
+    body.dark &{
+
+        color: $blancoWeb;
+
+
+    }
+
+
+}
+
+
+/*seccion fin mode dark*/
 
 .content-welc{
 
