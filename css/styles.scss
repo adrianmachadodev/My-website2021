@@ -5,6 +5,9 @@ $grisnegroweb: #1B1B1B;
 
 $sombraLight: 0px 0px 10px rgba(170, 170, 170,.16);
 $sombraDark: 0px 0px 10px rgba(216, 212, 212, 0.16);
+
+$sombraImgLight: 0px 4px 10px 5px rgba(94, 93, 93, 0.16);
+$sombraImgDark: 0px 4px 10px 5px rgba(194, 194, 194, 0.16);
  
 
 
@@ -217,8 +220,8 @@ label{
 
     height: 250px;
     width: 650px;
-    margin-top: 90px;
-    margin-left: 80px;
+    margin-top: 20px;
+    //margin-left: 80px;
     /*background-color: lightpink;*/
 
 
@@ -227,7 +230,14 @@ label{
 
 .text-welc{
 
-    margin-top: 50px;
+    margin-top: 30px;
+
+}
+
+.blue{
+
+
+    color: blue;
 
 }
 
@@ -241,11 +251,11 @@ label{
 
 .works{
 
-    
-    margin-left: 10px;
-    margin-top: 50px;
-}
+    margin-top: 150px;
 
+
+
+}
 /*icono del about main*/
 .about-icon{
 
@@ -265,12 +275,16 @@ label{
 
 .about{
 
-    margin-top: 200px;
+    margin-top: 150px;
 
 }
 
 
 p{
+
+    font-family: 'Quicksand', sans-serif;
+
+    font-size:18px;
 
     body.dark & {
 
@@ -283,7 +297,12 @@ p{
 
 }
 
+
+
 h1{
+
+    
+
 
     body.dark & {
 
@@ -302,5 +321,18 @@ h1{
 
     }
 
+
+}
+
+.pasta{
+
+    box-shadow: $sombraImgLight;
+
+    body.dark &{
+
+        box-shadow: $sombraImgDark;
+
+
+    }
 
 }
