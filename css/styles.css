@@ -102,9 +102,21 @@ body.dark label {
   margin-top: 150px; }
 
 /*icono del about main*/
+.About-btn {
+  display: inline-block;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: 1s ease 0.2s 1 normal forwards running textAni; }
+
 .about-icon {
   margin-right: 5px;
   margin-bottom: 6px; }
+
+.icons-rrss {
+  display: inline-block;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: 1s ease 0.2s 1 normal forwards running textAni; }
 
 .btn {
   margin-top: 50px; }
@@ -128,3 +140,17 @@ body.dark .icon {
   box-shadow: 0px 4px 10px 5px rgba(94, 93, 93, 0.16); }
   body.dark .pasta {
     box-shadow: 0px 4px 10px 5px rgba(194, 194, 194, 0.16); }
+
+.text-welc span {
+  display: inline-block;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: 1s ease 0.2s 1 normal forwards running textAni; }
+
+@keyframes textAni {
+  from {
+    transform: translateY(30px);
+    opacity: 0; }
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }

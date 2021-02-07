@@ -6,3 +6,4 @@ btnSwitch.addEventListener('click', () =>{
         btnSwitch.classList.toggle('active');
 
 });
+

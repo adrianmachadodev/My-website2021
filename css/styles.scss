@@ -205,6 +205,7 @@ label{
 
 /*seccion fin mode dark*/
 
+
 .content-welc{
 
     width: 100%;
@@ -232,6 +233,7 @@ label{
 
     margin-top: 30px;
 
+
 }
 
 .blue{
@@ -257,8 +259,19 @@ label{
 
 }
 /*icono del about main*/
+
+.About-btn{
+
+    display: inline-block;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: 1s ease 0.2s 1 normal forwards running textAni;
+
+
+}
 .about-icon{
 
+    
     margin-right: 5px;
     margin-bottom: 6px;
   
@@ -266,9 +279,21 @@ label{
 
 }
 
+.icons-rrss{
+
+    display: inline-block;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: 1s ease 0.2s 1 normal forwards running textAni;
+
+
+
+}
+
 .btn {
 
-   
+
+    
     margin-top: 50px;
 
 }
@@ -336,3 +361,44 @@ h1{
     }
 
 }
+
+.text-welc span{
+
+    display: inline-block;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: 1s ease 0.2s 1 normal forwards running textAni;
+
+
+}
+
+@keyframes textAni{
+
+    from{
+
+        transform: translateY(30px);
+        opacity: 0;
+
+
+
+    }
+
+    to{
+
+        transform: translateY(0px);
+        opacity: 1;
+
+
+
+
+
+    }
+
+
+
+
+
+}
+
+
+
