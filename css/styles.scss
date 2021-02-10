@@ -263,7 +263,7 @@ label{
 .About-btn{
 
     display: inline-block;
-    transform: translateY(30px);
+    transform: translateX(30px);
     opacity: 0;
     animation: 1s ease 0.2s 1 normal forwards running textAni;
 
@@ -282,7 +282,7 @@ label{
 .icons-rrss{
 
     display: inline-block;
-    transform: translateY(30px);
+    transform: translateX(30px);
     opacity: 0;
     animation: 1s ease 0.2s 1 normal forwards running textAni;
 
@@ -365,18 +365,20 @@ h1{
 .text-welc span{
 
     display: inline-block;
-    transform: translateY(30px);
+    transform: translateX(-30px);
     opacity: 0;
     animation: 1s ease 0.2s 1 normal forwards running textAni;
 
 
 }
 
+
+
 @keyframes textAni{
 
     from{
 
-        transform: translateY(30px);
+        transform: translateX(-30px);
         opacity: 0;
 
 
@@ -385,7 +387,7 @@ h1{
 
     to{
 
-        transform: translateY(0px);
+        transform: translateX(0);
         opacity: 1;
 
 
@@ -394,11 +396,9 @@ h1{
 
     }
 
-
-
-
-
 }
+
+
 
 
 
