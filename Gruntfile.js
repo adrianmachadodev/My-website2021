@@ -9,6 +9,20 @@ module.exports = function (grunt) {
     });
 
     grunt.initConfig({
+        /*htmlmin: {                                     // Task
+            dist: {                                      // Target
+                options: {                                 // Target options
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                
+                files: {                                   // Dictionary of files
+                    'dist/index.html': 'dist/index.html',     // 'destination': 'source'
+
+                }
+            }
+            
+        },*/
 
         sass: {
 
@@ -113,13 +127,13 @@ module.exports = function (grunt) {
                 }]
 
             },
-            fonts:{
-                files: [{ 
+            fonts: {
+                files: [{
                     //for font-awesome
-                    expand:true,
-                    dot:true,
-                    cwd:'node_modules/open-iconic/font',
-                    src:['fonts/*.*'],
+                    expand: true,
+                    dot: true,
+                    cwd: 'node_modules/@fortawesome/fontawesome-free',
+                    src: ['webfonts/*.*'],
                     dest: 'dist'
                 }]
             }
@@ -196,7 +210,7 @@ module.exports = function (grunt) {
 
                 dest: 'dist',
 
-                src: ['index.html']
+                src: ['index.html',]
 
             },
 
@@ -270,6 +284,9 @@ module.exports = function (grunt) {
 
     grunt.registerTask('img:compress', ['imagemin']);
 
+    //grunt.registerTask('default', ['htmlmin']);
+
+
     grunt.registerTask('build', [
 
         'clean',
@@ -289,6 +306,10 @@ module.exports = function (grunt) {
         'filerev',
 
         'usemin'
+
+        //'htmlmin'
+
+
 
     ]);
 

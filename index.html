@@ -7,11 +7,11 @@
 
 
     <!-- Bootstrap CSS -->
-    <!-- build:css dist/index.css -->
+    <!-- build:css css/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <!-- endbuild  -->
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,7 +29,7 @@
 
 
     <!-- pestaña -->
-    <link rel="icon" href="images/logo/logo 2 adrian.png">
+    <link rel="icon" href="images/logo 2 adrian.png">
     <title>Adrian Machado | Front-end Developer</title>
 
 </head>
@@ -38,11 +38,11 @@
 
     <nav class="navbar navbar-expand-lg fixed-top" style="margin-bottom: 100px;">
         <div class="container-fluid">
-            <a href="#"><img src="images/logo/logo 2 adrian.png" alt="" width="45px"></a>
+            <a href="#"><img src="images/logo 2 adrian.png" alt="" width="45px"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i class="bi bi-list" style="font-size: 2rem;"></i></span>
+                <span><i class="fas fa-bars" style="font-size: 2rem;"></i></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav" role="navigation">
                 <ul class="navbar-nav text-center">
@@ -59,8 +59,8 @@
                 </ul>
                 <div class="row ml-2">
                     <button class="switch" id="switch">
-                        <span><i class="bi bi-brightness-high" style="font-size: 0.8rem;"></i></span>
-                        <span><i class="bi bi-moon" style="font-size: 0.8rem;"></i></span>
+                        <span><i class="fas fa-sun" style="font-size: 0.7rem; margin-left: -5px;"></i></span>
+                        <span><i class="fas fa-moon" style="font-size: 0.7rem; margin-right: -5px;"></i></span>
                     </button>
                 </div>
             </div>
@@ -71,7 +71,7 @@
 
     <div class="container">
 
-        <div class="row overflow-hidden" style="margin-top: 80px;">
+        <div class="row overflow-hidden" style="margin-top: 80px; margin-left: 10px;">
             <div class="welc-title  h-auto overflow-hidden mb-5 ">
                 <h1 class="text-welc w-100" style="font-family: 'Major Mono Display', monospace; font-size: 200%;">
                     <span>
@@ -84,19 +84,16 @@
                     <span>estudiante de programación.</span>
                 </h1>
                 <a style="font-family: 'Asap Condensed', sans-serif;" href="#About"><button type="button"
-                        class="About-btn btn btn-outline-primary"><span
-                            class="bi bi-info-circle-fill about-icon"></span> About me</button>
+                        class="About-btn btn btn-outline-primary"><span class="fas fa-info-circle about-icon"></span>
+                        About me</button>
                 </a>
 
-                <div class="row mt-5">
+                <div class="row mt-4">
                     <nav class="nav">
-                        <a class="nav-link icons-rrss" href="#"><i class="bi bi-github"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a class="nav-link icons-rrss" href="#"><i class="bi bi-instagram"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a class="nav-link icons-rrss" href="#"><i class="bi bi-twitter"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a class="nav-link icons-rrss" href="#"><i class="bi bi-linkedin"
+                        <a class="nav-link icons-rrss" href="https://github.com/adrianmachadodev"><i
+                                class="fab fa-github" style="font-size: 1.5rem;"></i></a>
+                        <a class="nav-link icons-rrss"
+                            href="https://www.linkedin.com/in/adri%C3%A1n-machado-b49394206/"><i class="fab fa-linkedin"
                                 style="font-size: 1.5rem;"></i></a>
 
                     </nav>
@@ -136,10 +133,13 @@
                 </p>
 
                 <p>
-                    Me encantaria poder seguir descubriendo nuevas formas de trabajo, como tener el conocimientos
-                    del desarrollo back-end.
+                    Me encantaria poder seguir descubriendo nuevas formas de trabajo, y seguir elevando mis
+                    conocimientos
+                    para la creacion de paginas.
                     <br>
                 </p>
+
+
                 <h1 class="text-center" style="font-family: 'Goldman', cursive;">knowledge</h1>
                 <div class="row align-items-start">
                     <div class="col">
@@ -161,7 +161,7 @@
                         <p>SASS</p>
                     </div>
                     <div class="col">
-                        <p>Grunt</p>
+                        <p>Grunt/Gulp</p>
                     </div>
                 </div>
 
@@ -178,15 +178,16 @@
         <div class="row mt-5 justify-content-between" style="margin-bottom: 90px;" id="Works">
             <div class="col-md-9 mx-auto text-center">
                 <h1 style="font-family: 'Goldman', cursive; margin-top: 60px;">Works</h1>
+                <p class="font-italic" style="font-size: 17px;">"Diseño moderno al alcance de un click"</p>
             </div>
             <div class="col-sm-6  mt-3 ">
                 <img src="images/website pastasyanina1.jpg" class="pasta" class="border-top-0" width="100%" alt="">
             </div>
             <div class="col-sm-6 mt-3  text-left">
-                <p>Mi comienzo en el desarrollo web, fue con una website para un lugar de comidas, en la que
+                <p>Mi comienzo en el desarrollo web, fue con una pagina web para un lugar de comidas, en la que
                     solamente
                     se mostraban los productos, junto a sus gustos, y variedades.
-                    Todo lo que se muestra en la website, fue hecho con lo basico, HTML y CSS.
+                    Todo lo que se muestra en la pagina, fue hecho con HTML y CSS.
                     Esta pagina tuvo dos versiones, en la cual, la primera tuvo ciertas partes del diseño, que no
                     quedaban bien.
                     La segunda version, fue mucho más agradable a la vista, con distintos efectos visuales,
@@ -200,12 +201,14 @@
 
             </div>
             <div class="col-sm-6 mt-5 align-content-start">
-                <p>En esta imagen se puede llegar a ver, la version final, de la pagina, hubo muchos cambios a la
-                    primera version, con efectos de zoom, realizados en CSS, una galeria de fotos mostrando las
+                <p>En esta imagen se puede llegar a ver, la version final de la pagina, hubo muchos cambios a la
+                    primera version, con efectos de zoom realizados en CSS, una galeria de fotos mostrando las
                     distintas
                     variedades de productos.
-                    Se mejoraron muchas cosas, animaciones, informacion del lugar, contactos con sus iconos.
-                    Se agregaron imagenes del lugar, para que sea mas familiar la bienvenida a la pagina.
+                    Se mejoro algunos detalles en lo que es el diseño, animaciones, informacion del lugar, contactos con
+                    sus iconos,
+                    y se agrego un mapa para ubicar dicho establecimiento.
+
                 </p>
             </div>
 
@@ -248,7 +251,11 @@
 
         <footer class="m-4">
 
-            <p class="text-center" style="font-size: 16px;">Designed by Adrián</p>
+            
+            <p class="text-center" style="font-size: 16px;">Designed by Adrián Machado</p>
+            
+            
+            
 
         </footer>
 
@@ -266,7 +273,7 @@
     <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>-->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!-- build:js dist/main.js -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper-utils.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
