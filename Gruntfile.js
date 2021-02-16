@@ -9,7 +9,7 @@ module.exports = function (grunt) {
     });
 
     grunt.initConfig({
-        /*htmlmin: {                                     // Task
+        htmlmin: {                                     // Task
             dist: {                                      // Target
                 options: {                                 // Target options
                     removeComments: true,
@@ -22,7 +22,7 @@ module.exports = function (grunt) {
                 }
             }
             
-        },*/
+        },
 
         sass: {
 
@@ -284,7 +284,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('img:compress', ['imagemin']);
 
-    //grunt.registerTask('default', ['htmlmin']);
+    grunt.registerTask('default', ['htmlmin']);
 
 
     grunt.registerTask('build', [
@@ -305,9 +305,9 @@ module.exports = function (grunt) {
 
         'filerev',
 
-        'usemin'
+        'usemin',
 
-        //'htmlmin'
+        'htmlmin'
 
 
 
