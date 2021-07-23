@@ -1,200 +1,291 @@
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  background: #fff;
-  transition: 0.3s ease all;
+	background: #fff;
+	transition: 0.3s ease all;
 }
 body.dark {
-  background: #1B1B1B;
+	background: #1b1b1b;
 }
 
 .navbar {
-  background: #fff;
-  transition: 0.3s ease all;
-  box-shadow: 0px 0px 10px rgba(170, 170, 170, 0.16);
-  /*Modo night*/
+	background: #fff;
+	transition: 0.3s ease all;
+	box-shadow: 0px 0px 10px rgba(170, 170, 170, 0.16);
+	/*Modo night*/
 }
 .navbar a {
-  color: black;
+	color: black;
 }
 .navbar a:hover {
-  color: deepskyblue;
+	color: deepskyblue;
 }
 .navbar .nav-link a {
-  color: black;
+	color: black;
 }
 .navbar .fa-bars:hover {
-  color: deepskyblue;
+	color: deepskyblue;
 }
 body.dark .navbar {
-  background: #1B1B1B;
-  box-shadow: 0px 0px 10px rgba(216, 212, 212, 0.16);
+	background: #1b1b1b;
+	box-shadow: 0px 0px 10px rgba(216, 212, 212, 0.16);
 }
 body.dark .navbar a {
-  color: #fff;
+	color: #fff;
 }
 body.dark .navbar a:hover {
-  color: deepskyblue;
+	color: deepskyblue;
 }
 body.dark .navbar .nav-link a {
-  color: #fff;
+	color: #fff;
 }
 body.dark .navbar .nav-link:hover {
-  color: deepskyblue;
+	color: deepskyblue;
 }
 body.dark .navbar .fa-bars {
-  color: #fff;
+	color: #fff;
 }
 body.dark .navbar .fa-bars:hover {
-  color: deepskyblue;
+	color: deepskyblue;
 }
 
 .switch {
-  background: #343d58;
-  border-radius: 1000px;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  outline: none;
+	background: #343d58;
+	border-radius: 1000px;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	outline: none;
 }
 .switch::after {
-  content: "";
-  display: block;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  background: #fff;
-  top: 0;
-  left: 0;
-  right: unset;
-  border-radius: 100px;
-  transition: 0.3s ease all;
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+	content: "";
+	display: block;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	background: #fff;
+	top: 0;
+	left: 0;
+	right: unset;
+	border-radius: 100px;
+	transition: 0.3s ease all;
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .switch.active {
-  background: orange;
-  color: black;
+	background: orange;
+	color: black;
 }
 .switch.active::after {
-  right: 0;
-  left: unset;
+	right: 0;
+	left: unset;
 }
 .switch span {
-  width: 20px;
-  height: 25px;
-  display: block;
-  background: none;
-  color: #fff;
-  margin-top: -3px;
+	width: 20px;
+	height: 25px;
+	display: block;
+	background: none;
+	color: #fff;
+	margin-top: -3px;
 }
 
 body.dark label {
-  color: #fff;
+	color: #fff;
 }
 
 /*seccion fin mode dark*/
 .content-welc {
-  width: 100%;
-  height: 450px;
-  /*background-color: lawngreen;*/
-  margin-bottom: 50px;
-  margin-top: 50px;
-  overflow: hidden;
+	width: 100%;
+	height: 450px;
+	/*background-color: lawngreen;*/
+	margin-bottom: 50px;
+	margin-top: 50px;
+	overflow: hidden;
 }
 
 .welc-title {
-  height: 250px;
-  width: 650px;
-  margin-top: 20px;
-  /*background-color: lightpink;*/
+	height: 250px;
+	width: 650px;
+	margin-top: 20px;
+	/*background-color: lightpink;*/
 }
 
 .text-welc {
-  margin-top: 30px;
+	margin-top: 30px;
 }
 
 .blue {
-  color: blue;
+	color: blue;
 }
 
 .conoc {
-  margin-left: 15px;
+	margin-left: 15px;
 }
 
 .works {
-  margin-top: 150px;
+	margin-top: 150px;
 }
 
 /*icono del about main*/
 .About-btn {
-  display: inline-block;
-  transform: translateX(30px);
-  opacity: 0;
-  animation: 1s ease 0.2s 1 normal forwards running textAni;
+	background-color: black;
+	border-color: #fff;
+	display: inline-block;
+	transform: translateX(30px);
+	opacity: 0;
+	animation: 1s ease 0.2s 1 normal forwards running textAni;
+}
+
+.About-btn:hover {
+	background-color: rgb(68, 68, 235);
+	border-color: #fff;
+}
+
+body.dark .About-btn {
+	background-color: #fff;
+	color: black;
+}
+
+body.dark .About-btn:hover {
+	background-color: rgb(68, 68, 235);
+	color: black;
+	border-color: #1b1b1b;
 }
 
 .about-icon {
-  margin-right: 5px;
-  margin-bottom: 6px;
+	margin-right: 5px;
+	margin-bottom: 6px;
 }
 
-.icons-rrss {
-  display: inline-block;
-  transform: translateX(30px);
-  opacity: 0;
-  animation: 1s ease 0.2s 1 normal forwards running textAni;
+.icons-rrss-gith {
+	display: inline-block;
+	transform: translateX(30px);
+	color: black;
+	opacity: 0;
+	animation: 1s ease 0.2s 1 normal forwards running textAni;
+}
+
+.icons-rrss-gith:hover {
+	color: red;
+}
+
+body.dark .icons-rrss-gith {
+	color: #fff;
+}
+
+body.dark .icons-rrss-gith:hover {
+	color: red;
+}
+
+.icons-rrss-linke {
+	display: inline-block;
+	transform: translateX(30px);
+	color: black;
+	opacity: 0;
+	animation: 1s ease 0.2s 1 normal forwards running textAni;
+}
+.icons-rrss-linke:hover {
+	color: cornflowerblue;
+}
+
+body.dark .icons-rrss-linke {
+	color: #fff;
+}
+
+body.dark .icons-rrss-linke:hover {
+	color: cornflowerblue;
 }
 
 .btn {
-  margin-top: 50px;
+	margin-top: 50px;
 }
 
 .about {
-  margin-top: 150px;
+	margin-top: 150px;
 }
 
 p {
-  font-family: "Quicksand", sans-serif;
-  font-size: 18px;
+	font-family: "Quicksand", sans-serif;
+	font-size: 18px;
 }
 body.dark p {
-  color: #fff;
+	color: #fff;
 }
 
 body.dark h1 {
-  color: #fff;
+	color: #fff;
 }
 
 body.dark .icon {
-  color: #fff;
+	color: #fff;
+}
+
+body.dark .dropdown-menu {
+	background-color: #1b1b1b;
+	border-color: #fff;
 }
 
 .pasta {
-  box-shadow: 0px 4px 10px 5px rgba(94, 93, 93, 0.16);
+	box-shadow: 0px 4px 10px 5px rgba(94, 93, 93, 0.16);
 }
 body.dark .pasta {
-  box-shadow: 0px 4px 10px 5px rgba(194, 194, 194, 0.16);
+	box-shadow: 0px 4px 10px 5px rgba(194, 194, 194, 0.16);
+}
+
+.punto {
+	color: red;
+	opacity: 0.3;
+	font-weight: bold;
+}
+
+#show {
+	opacity: 0;
+	-webkit-transition: opacity 2s;
+	-moz-transition: opacity 2s;
+	-o-transition: opacity 2s;
+	transition: opacity 2s;
+}
+
+#buttonVisit {
+	background-color: #343d58;
+	width: 150px;
+	height: 30px;
+	border-radius: 40px;
+	border: none;
+}
+
+#buttonVisit:hover {
+	background-color: crimson;
+	animation: 0.5s ease 0.2s 1 normal forwards running buttonAni;
 }
 
 .text-welc span {
-  display: inline-block;
-  transform: translateX(-30px);
-  opacity: 0;
-  animation: 1s ease 0.2s 1 normal forwards running textAni;
+	display: inline-block;
+	transform: translateX(-30px);
+	opacity: 0;
+	animation: 1s ease 0.2s 1 normal forwards running textAni;
 }
 
 @keyframes textAni {
-  from {
-    transform: translateX(-30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+	from {
+		transform: translateX(-30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes buttonAni {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-2px);
+	}
 }
 
 /*# sourceMappingURL=styles.css.map */

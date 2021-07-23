@@ -15,13 +15,13 @@ module.exports = function (grunt) {
                     removeComments: true,
                     collapseWhitespace: true
                 },
-                
+
                 files: {                                   // Dictionary of files
                     'dist/index.html': 'dist/index.html',     // 'destination': 'source'
 
                 }
             }
-            
+
         },
 
         sass: {
@@ -210,7 +210,7 @@ module.exports = function (grunt) {
 
                 dest: 'dist',
 
-                src: ['index.html',]
+                src: ['index.html', 'en.html']
 
             },
 
@@ -258,7 +258,7 @@ module.exports = function (grunt) {
 
         usemin: {
 
-            html: ['dist/index.html'],
+            html: ['dist/index.html', 'dist/en.html'],
 
             options: {
 
