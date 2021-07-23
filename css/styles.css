@@ -198,6 +198,57 @@ body.dark .icons-rrss-linke:hover {
 	color: cornflowerblue;
 }
 
+
+.icon-end-git{
+	display: inline-block;
+	color: black;
+
+}
+
+.icon-end-linke{
+	display: inline-block;
+	color: black;
+
+}
+
+
+.icon-end-git:hover{
+	display: inline-block;
+	color: rgb(127, 60, 235);
+
+}
+
+.icon-end-linke:hover{
+	display: inline-block;
+	color: rgb(23, 51, 177);
+
+}
+
+body.dark .icon-end-git{
+	display: inline-block;
+	color: #fff;
+
+}
+
+body.dark .icon-end-linke{
+	display: inline-block;
+	color: #fff;
+
+}
+
+
+body.dark .icon-end-git:hover{
+	display: inline-block;
+	color: rgb(127, 60, 235);
+
+}
+
+body.dark .icon-end-linke:hover{
+	display: inline-block;
+	color: cornflowerblue;
+
+}
+
 .btn {
 	margin-top: 50px;
 }
